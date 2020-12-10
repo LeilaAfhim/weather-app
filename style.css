@@ -1,3 +1,114 @@
-h1 {
-  color: blue;
+.message {
+  font-size: 60px;
+  font-family: "Bebas Neue", cursive;
+  color: rgb(70, 30, 52);
+  letter-spacing: 14px;
+  margin-left: 20px;
+  margin-top: 70px;
+}
+
+.city {
+  margin-left: 20px;
+  color: rgb(70, 30, 52);
+  margin-top: 60px;
+  font-size: 28px;
+  font-weight: bold;
+  font-family: "Varela Round", sans-serif;
+  letter-spacing: 3px;
+}
+
+.today {
+  font-size: 15px;
+  font-weight: bold;
+  font-family: "Varela Round", sans-serif;
+  letter-spacing: 3px;
+  color: rgb(70, 30, 52);
+}
+
+.temperature {
+  font-size: 75px;
+  margin-left: 15px;
+  color: rgb(168, 0, 8);
+  font-family: "Varela Round", sans-serif;
+}
+
+.units {
+  font-size: 75px;
+  margin-left: 15px;
+  color: rgb(168, 0, 8);
+  font-family: "Varela Round", sans-serif;
+}
+
+.input-group {
+  font-size: 18px;
+  margin-top: 40px;
+  padding: 0px;
+  border: none;
+  margin-left: 20px;
+  max-width: 90%;
+
+  box-shadow: 5px 5px 5px #976e72;
+}
+
+.current {
+  font-size: 15px;
+  margin-top: 40px;
+  padding: 10px 15px;
+  border: none;
+  margin-left: 0px;
+  max-width: 80%;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px #976e72;
+  background: rgb(168, 0, 8);
+  color: white;
+}
+
+.fa-search {
+  color: rgb(168, 0, 8);
+}
+
+.next-days {
+  border: solid 1px #423132;
+  box-shadow: 5px 5px 5px #976e72;
+  border-radius: 25px;
+  padding: 15px;
+  font-family: "Varela Round", sans-serif;
+  background: #3f3604;
+  margin-left: 20px;
+  margin-top: 20px;
+  color: white;
+}
+
+h3 {
+  font-size: 25px;
+  color: white;
+}
+
+body {
+  background-image: linear-gradient(to right, #f7e4db 0%, #fdf1e9 100%);
+
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.nuage {
+  position: fixed;
+
+  margin-left: 200px;
+  margin-top: -350px;
+}
+
+p {
+  color: rgb(168, 0, 8);
+  font-family: "Varela Round", sans-serif;
+  margin-left: 20px;
+  font-size: 14px;
+  transition: all 200ms ease-in-out;
+}
+
+p:hover {
+  color: rgb(168, 0, 8);
+  font-weight: bold;
+  cursor: pointer;
 }
