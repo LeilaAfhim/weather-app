@@ -76,6 +76,7 @@
   background: #3f3604;
   margin-left: 20px;
   margin-top: 20px;
+  margin-bottom: 20px;
   color: white;
 }
 
@@ -111,4 +112,33 @@ p:hover {
   color: rgb(168, 0, 8);
   font-weight: bold;
   cursor: pointer;
+}
+
+.open-source {
+  font-family: "Varela Round", sans-serif;
+  margin-left: 20px;
+
+  font-size: 16px;
+  transition: all 200ms ease-in-out;
+}
+
+.open-source:hover {
+  color: rgb(168, 0, 8);
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.website {
+  font-family: "Varela Round", sans-serif;
+
+  font-size: 16px;
+  transition: all 200ms ease-in-out;
+}
+
+.website:hover {
+  color: rgb(168, 0, 8);
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
 }
