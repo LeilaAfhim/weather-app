@@ -33,8 +33,7 @@
 }
 
 .units {
-  font-size: 75px;
-  margin-left: 15px;
+  font-size: 40px;
   color: #ec4513;
   font-family: "Varela Round", sans-serif;
 }
@@ -42,7 +41,7 @@
 .input-group {
   font-size: 18px;
   margin-top: 15px;
-  padding: 0px;
+
   border: solid 1px white;
   margin-left: 20px;
 
@@ -98,7 +97,7 @@ body {
 }
 
 p {
-  color: #ec4513);
+  color: #ec4513;
   font-family: "Varela Round", sans-serif;
   margin-left: 20px;
   font-size: 14px;
@@ -150,7 +149,7 @@ p:hover {
 
 .weather-app {
   max-width: 620px;
-  box-shadow:5px 5px 15px #333333; 
+  box-shadow: 5px 5px 15px #333333;
   border: 5px solid #ffffff;
   border-radius: 25px;
   padding: 20px;
