@@ -28,7 +28,7 @@ function showTemperature (response){
     `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   
-  
+  celciusTemperature = response.data.main.temp;
 }
 
 
@@ -72,19 +72,41 @@ searchForm.addEventListener ("click", newCity);
 let currentLocation = document.querySelector("#current-location");
 currentLocation.addEventListener("click", getCurrentLocation);
 
-//challenge 3
+//degree to Fahrenheit
 
-function change (event){
+
+
+function showFahrenheit (event){
     event.preventDefault();
 
-    let celsius = document.querySelector ("#temperature");
     
-    celsius.innerHTML= `54 °F`;
 
-    far.innerHTML=`Celsius`;
+    let fahrenheitTemp = (celciusTemperature*9)/5+32;
+    let temperatureElement=document.querySelector("#temperature");
+    temperatureElement.innerHTML = Math.round(fahrenheitTemp);
+celcius.classList.remove("active");
+    fahrenheit.classList.add("active");
 
 }
 
+function showCelcius (event){
+event.preventDefault();
 
+let temperatureElement=document.querySelector("#temperature");
+ temperatureElement.innerHTML = Math.round(celciusTemperature);
+celcius.classList.add("active");
+    fahrenheit.classList.remove("active");
+}
+
+
+let celciusTemperature = null;
+
+    let fahrenheit = document.querySelector("#fahrenheit");
+fahrenheit.addEventListener("click", showFahrenheit);
+
+let celcius = document.querySelector("#celcius");
+celcius.addEventListener("click", showCelcius);
+
+//Bruxelles weather at the opening app
 searchCity("Bruxelles");
 

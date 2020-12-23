@@ -4,13 +4,13 @@
   color: #333333;
   letter-spacing: 14px;
   margin-left: 20px;
-  margin-top: 40px;
+  margin-top: 10px;
 }
 
 .city {
   margin-left: 20px;
   color: #333333;
-  margin-top: 60px;
+  margin-top: 40px;
   font-size: 28px;
   font-weight: bold;
   font-family: "Varela Round", sans-serif;
@@ -23,6 +23,7 @@
   font-family: "Varela Round", sans-serif;
   letter-spacing: 3px;
   color: #333333;
+  margin-bottom: 40px;
 }
 
 .temperature {
@@ -160,4 +161,15 @@ p:hover {
     #ffffff 75%,
     #e9e9e7 100%
   );
+}
+
+.active {
+  font-size: 75px;
+  color: #ec4513;
+  font-family: "Varela Round", sans-serif;
+}
+.active:hover {
+  text-decoration: none;
+  cursor: default;
+  color: #ec4513;
 }
