@@ -18,8 +18,6 @@ today.innerHTML= `${day}, ${date} ${month}`;
 
 //api
 function showTemperature (response){
-    console.log(response.data);
-   
     document.querySelector(".city").innerHTML=response.data.name;
     document.querySelector(".temperature").innerHTML=Math.round(response.data.main.temp);
     document.querySelector(".message").innerHTML=response.data.weather[0].description;
@@ -87,9 +85,6 @@ forecast= response.data.list[index];
 
 
 function searchCity(city){
-
-
-   
     let units ="metric";
     let apiKey = "62d7633f840fb3f4bca3fffc5afee380";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
