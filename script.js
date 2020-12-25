@@ -77,7 +77,7 @@ forecast= response.data.list[index];
             <br />
             <h3>${Math.round(forecast.main.temp)}°C
                 <br />
-                <img src="https://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png">
+                <img src="https://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png" width=60px>
             </h3>
         </button>`;
 }
