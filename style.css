@@ -79,8 +79,8 @@
   color: white;
 }
 
-.forecastIcon {
-  margin-top: 5px;
+.next-days:hover {
+  cursor: default;
 }
 
 h3 {
