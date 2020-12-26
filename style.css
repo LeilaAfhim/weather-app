@@ -1,16 +1,16 @@
 .message {
-  font-size: 60px;
+  font-size: 30px;
   font-family: "Bebas Neue", cursive;
-  color: #038f88;
+  color: #0684be;
   letter-spacing: 14px;
   margin-left: 20px;
-  margin-top: 10px;
+  margin-top: 0px;
 }
 
 .city {
-  margin-left: 20px;
+  margin-left: 15px;
   color: white;
-  margin-top: 40px;
+  margin-top: 30px;
   font-size: 28px;
   font-weight: bold;
   font-family: "Varela Round", sans-serif;
@@ -23,70 +23,78 @@
   font-family: "Varela Round", sans-serif;
   letter-spacing: 3px;
   color: white;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+  margin-left: 15px;
 }
 
 .temperature {
-  font-size: 75px;
+  font-size: 50px;
   margin-left: 15px;
   color: #ec4513;
   font-family: "Varela Round", sans-serif;
 }
 
 .units {
-  font-size: 40px;
+  font-size: 25px;
   color: #ec4513;
   font-family: "Varela Round", sans-serif;
 }
 
-.input-group {
-  font-size: 18px;
-  margin-top: 15px;
-
-  border: solid 3px white;
-  margin-left: 20px;
-
-  box-shadow: 5px 5px 5px #c0b6a6;
+.mb-3 {
+  font-family: "Varela Round", sans-serif;
+  font-size: 13px;
+  color: #77557a;
+  border: solid 2px white;
+  display: block;
+  margin: auto;
+  max-width: 400px;
+  box-shadow: 5px 5px 10px #77557a;
 }
 
 .current {
-  font-size: 15px;
-  margin-top: 15px;
-  padding: 8px 15px;
-  border: solid 3px white;
-  margin-left: 20px;
+  font-size: 13px;
 
-  border-radius: 5px;
-  box-shadow: 5px 5px 5px #c0b6a6;
-  background: #ec4513;
-  color: white;
+  padding: 8px 15px;
+  border: solid 2px white;
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  border-radius: 40px;
+  box-shadow: 5px 5px 10px #77557a;
+  background: #ffffff;
+  color: #77557a;
+  margin-top: 40px;
 }
 
 .fa-search {
   color: #ec4513;
 }
 
+.input-group-append {
+  background: white;
+}
+
 .next-days {
-  border: solid 3px white;
-  box-shadow: 5px 5px 5px #c0b6a6;
-  border-radius: 15px;
-  padding: 11px;
+  border: solid 2px white;
+  box-shadow: 5px 5px 10px #77557a;
+  border-radius: 10px;
+  padding-top: 8px;
   font-family: "Varela Round", sans-serif;
-  background: #f39386;
-  margin-left: 20px;
+  font-size: 13px;
+  background: #8fa5e2;
+  margin-left: 15px;
   margin-top: 20px;
   margin-bottom: 10px;
-  color: white;
+  color: rgb(255, 255, 255);
+  max-width: 100%;
 }
 
 .next-days:hover {
   cursor: default;
 }
 
-h3 {
-  font-size: 20px;
-  color: white;
-  margin: 0px;
+.degree {
+  font-size: 16px;
 }
 
 body {
@@ -96,27 +104,10 @@ body {
 }
 
 .nuage {
-  margin-left: 300px;
-  margin-top: -170px;
+  margin-left: 150px;
+  margin-top: -110px;
 }
 
-p {
-  color: #ec4513;
-  font-family: "Varela Round", sans-serif;
-  margin-left: 20px;
-  font-size: 14px;
-  transition: all 200ms ease-in-out;
-}
-
-p:hover {
-  color: #ec4513;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.link {
-  margin-left: 40px;
-}
 .open-source {
   font-family: "Varela Round", sans-serif;
   margin-left: 20px;
@@ -147,13 +138,13 @@ p:hover {
 }
 
 .weather-app-wrapper {
-  max-width: 620px;
+  max-width: 470px;
   margin: 15px;
 }
 
 .weather-app {
-  max-width: 620px;
-  box-shadow: 5px 5px 15px #c0b6a6;
+  max-width: 100%;
+  box-shadow: 5px 5px 15px #9f99b4;
   border: 5px solid #ffffff;
   border-radius: 25px;
   padding: 20px;
@@ -163,13 +154,12 @@ p:hover {
     #d5d4d0 0%,
     #d2dff0 1%,
     #f7f7f7 31%,
-    #e9c4c4 75%,
-    #ebd6f0 100%
+    #ac93b6 100%
   );
 }
 
 .active {
-  font-size: 75px;
+  font-size: 50px;
   color: #ec4513;
   font-family: "Varela Round", sans-serif;
 }

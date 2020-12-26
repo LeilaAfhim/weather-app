@@ -27,6 +27,7 @@ function showTemperature (response){
   );
   
   celciusTemperature = response.data.main.temp;
+
 }
 
 
@@ -72,11 +73,11 @@ forecast= response.data.list[index];
     forecastElement.innerHTML +=
  `<button class="next-days">
         ${formatHours(forecast.dt*1000)}
-            <br />
-            <h3>${Math.round(forecast.main.temp)}°C
-                <br />
-                <img src="https://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png" width=60px>
-            </h3>
+            
+            <div class="degree">${Math.round(forecast.main.temp)}°C
+                </br>
+                <img src="https://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png" width=40px>
+            </div>
         </button>`;
 }
 
