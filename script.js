@@ -25,8 +25,8 @@ function showTemperature (response){
     "src",
     `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
-  
-  celciusTemperature = response.data.main.temp;
+
+celciusTemperature = response.data.main.temp;
 
 }
 
@@ -37,7 +37,13 @@ function searchLocation(position){
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=${units}`;
 
 axios.get(apiUrl).then(showTemperature);
+
+//forecast for current location button
+apiUrl=`https://api.openweathermap.org/data/2.5/forecast?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayForecast);
+
 }
+
 
 function getCurrentLocation(event){
     event.preventDefault();
@@ -45,7 +51,8 @@ function getCurrentLocation(event){
     navigator.geolocation.getCurrentPosition(searchLocation);
 }
 
-//challenge 2 challenge api
+
+// permet d'avoir un format heure 00:00 (utilisé dans forecast)
 
 function formatHours(timestamp){
     let date= new Date(timestamp);
@@ -67,6 +74,7 @@ let forecastElement = document.querySelector("#forecast");
 forecastElement.innerHTML= null;
 let forecast= null;
 
+//permet de répéter l'operation plusieurs fois
 for(let index=0; index < 5 ;index ++){
 forecast= response.data.list[index];
 
@@ -80,16 +88,13 @@ forecast= response.data.list[index];
             </div>
         </button>`;
 }
-
 }
-
 
 
 function searchCity(city){
     let units ="metric";
     let apiKey = "62d7633f840fb3f4bca3fffc5afee380";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
-
 
 axios.get(apiUrl).then(showTemperature);
 
@@ -111,17 +116,17 @@ let searchForm = document.querySelector ("#search-city");
 searchForm.addEventListener ("click", newCity);
 
 
+
+
+
 let currentLocation = document.querySelector("#current-location");
 currentLocation.addEventListener("click", getCurrentLocation);
 
+
 //degree to Fahrenheit
-
-
 
 function showFahrenheit (event){
     event.preventDefault();
-
-    
 
     let fahrenheitTemp = (celciusTemperature*9)/5+32;
     let temperatureElement=document.querySelector("#temperature");
@@ -130,6 +135,7 @@ function showFahrenheit (event){
 
 celcius.classList.remove("active");
     fahrenheit.classList.add("active");
+    
 }
 
 function showCelcius (event){
@@ -149,6 +155,8 @@ fahrenheit.addEventListener("click", showFahrenheit);
 
 let celcius = document.querySelector("#celcius");
 celcius.addEventListener("click", showCelcius);
+
+
 
 //Bruxelles weather at the opening app
 searchCity("Bruxelles");
