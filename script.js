@@ -33,7 +33,7 @@ celciusTemperature = response.data.main.temp;
 
 function searchLocation(position){
      let units ="metric";
-    let apiKey = "62d7633f840fb3f4bca3fffc5afee380";
+    let apiKey = "eea119ae36b2afadaea93b34bf51a202";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=${units}`;
 
 axios.get(apiUrl).then(showTemperature);
@@ -135,7 +135,7 @@ function showFahrenheit (event){
 
 celcius.classList.remove("active");
     fahrenheit.classList.add("active");
-    
+
 }
 
 function showCelcius (event){
