@@ -33,7 +33,7 @@ celciusTemperature = response.data.main.temp;
 
 function searchLocation(position){
      let units ="metric";
-    let apiKey = "299b7b1172f0c10a906c854aa2f03206";
+    let apiKey = "b31db64dab4e4a28645ff69183a6142d";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=${units}`;
 
 axios.get(apiUrl).then(showTemperature);
@@ -93,7 +93,7 @@ forecast= response.data.list[index];
 
 function searchCity(city){
     let units ="metric";
-    let apiKey = "62d7633f840fb3f4bca3fffc5afee380";
+    let apiKey = "b31db64dab4e4a28645ff69183a6142d";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
 
 axios.get(apiUrl).then(showTemperature);
